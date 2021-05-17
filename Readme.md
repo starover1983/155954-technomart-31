@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Алексей Старостин](https://up.htmlacademy.ru/htmlcss/31/user/155954).
-* Наставник: [Анастасия Ничипорчук] (https://htmlacademy.ru/profile/id612797).
+* Наставник: [Анастасия Ничипорчук](https://htmlacademy.ru/profile/id612797).
 
 ---
 
