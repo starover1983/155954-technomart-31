@@ -1,1 +1,259 @@
-style.css
+.page-body {
+font-family: Cuprum;
+font-weight: 400;
+font-style: normal;
+background: url("../img/demo-background.png");
+}
+
+
+.header-text {
+font-family: Cuprum;
+font-size: 16px;
+font-style: italic;
+font-weight: 400;
+line-height: 23px;
+letter-spacing: 0px;
+text-align: left;
+color: #EE3643;
+}
+
+.nav-item {
+color:#FFFFFF;
+line-height: 24px;
+font-size: 18px;
+float: left;
+border: 5px solid #FFFFFF; /* пока белым цветом)*/
+text-decoration: none;
+}
+
+.main-header-logo {
+  height: 16.524782180786133px;
+  width: 14.791305541992188px;
+  left: 58.18226623535156px;
+  top: 1.0206022262573242px;
+  border-radius: 0px;
+}
+/* думаю так должна выглядеть стилизация текста если б он был*/
+
+
+.contacts-phone {
+color: #EE3643;
+font-weight: 700;
+font-size: 21px;
+
+}
+
+.contacts-header{
+line-height: 24px;
+font-size: 14px;
+text-align: center;
+color: #32425C;
+
+}
+.login-link {
+color: #000000;
+font-size: 21px;
+line-height: 21px;
+}
+
+.reg-link {
+  color: #000000;
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.content-item {
+font-weight: 700;
+font-size: 24px;
+line-height: 30px;
+color: #FFFFFF;
+}
+
+.content-button {
+font-size: 14px;
+line-height: 18px;
+color: #FFFFFF;
+}
+
+.popular-goods{
+font-size: 30px;
+line-height: 30px;
+text-align: left;
+color: #32425C;
+font-weight: 400;
+}
+
+.all-popular-goods{
+font-size: 14px;
+line-height: 18px;
+text-align: center;
+color: #FFFFFF;
+}
+
+.popular-item{
+font-family: PT Sans;
+font-size: 18px;
+font-weight: 700;
+line-height: 20px;
+letter-spacing: 0px;
+color: #000000;
+text-decoration: none;
+
+}
+
+.high-price{
+font-family: PT Sans;
+font-size: 17px;
+font-weight: 700;
+line-height: 18px;
+color: #A9A9A9;
+text-decoration: line-through;
+}
+
+.real-price{
+font-family: PT Sans;
+font-size: 17px;
+font-weight: 700;
+line-height: 18px;
+color: #FFFFFF;
+background: #EE3643;
+}
+
+.popular-manufacturers{
+font-size: 30px;
+font-weight: 400;
+line-height: 30px;
+text-align: left;
+color: #32425C;
+font-style: normal;
+font-family: Cuprum;
+}
+
+.all-manufacturers{
+font-size: 14px;
+line-height: 18px;
+text-align: center;
+color: #FFFFFF;
+}
+
+.popular-manufacturer{
+
+border: 15px #FFFFFF;
+}
+
+
+.services {
+font-size: 30px;
+font-weight: 400;
+line-height: 30px;
+text-align: left;
+}
+
+.text-small{
+font-family: PT Sans;
+font-size: 13px;
+font-weight: 400;
+line-height: 24px;
+text-align: left;
+
+color: black;
+}
+
+.feature-content{
+  font-family: Cuprum;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.company-name-contacts{
+  //styleName: Заголовок 2;
+  font-family: Cuprum;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.expedition{
+  //styleName: Параграф 2;
+  font-family: Cuprum;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+color: #000000;
+
+
+}
+
+
+
+.red-button{
+//styleName: Текст на кнопке;
+font-family: Cuprum;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px;
+letter-spacing: 0px;
+text-align: center;
+color: #FFFFFF;
+background: #EE3643;
+}
+
+
+.nav-item-yellow {
+//styleName: Параграф 2;
+font-family: Cuprum;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0px;
+text-align: left;
+color: #FFD180;
+float: left;
+}
+
+.contacts-footer{
+  //styleName: Параграф 2;
+  font-family: Cuprum;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #F3F7F9;
+}
+.all-rights{
+//styleName: Параграф 3;
+font-family: Cuprum;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px;
+letter-spacing: 0px;
+text-align: left;
+color: #F3F7F9;
+}
+
+.inet{
+  //styleName: Параграф 3;
+  font-family: Cuprum;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #FFD180;
+}
