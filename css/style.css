@@ -3,6 +3,31 @@ font-family: Cuprum;
 font-weight: 400;
 font-style: normal;
 background: url("../img/demo-background.png");
+font-size: 18px;
+line-height: 24px;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-navigation {
+  list-style: none;
+}
+
+:root {
+--basic-black: #000000;
+--middle-dark-blue:#32425C;
+--dark-grey: #A9A9A9;
+--basic-white: #ffffff;
+--basic-red: #EE3643;
+--light-brown:#FFD180;
+--very-light-blue: #F3F7F9;
 }
 
 
@@ -10,84 +35,87 @@ background: url("../img/demo-background.png");
 font-family: Cuprum;
 font-size: 16px;
 font-style: italic;
-font-weight: 400;
 line-height: 23px;
 letter-spacing: 0px;
 text-align: left;
-color: #EE3643;
+color: var(--basic-red);
+
 }
 
 .nav-item {
-color:#FFFFFF;
+color: var(--basic-white);
+background-color: var( --middle-dark-blue);
 line-height: 24px;
 font-size: 18px;
-float: left;
-border: 5px solid #FFFFFF; /* пока белым цветом)*/
 text-decoration: none;
+list-style: none;
 }
 
 .main-header-logo {
-  height: 16.524782180786133px;
-  width: 14.791305541992188px;
-  left: 58.18226623535156px;
-  top: 1.0206022262573242px;
-  border-radius: 0px;
-}
+  height: 17px;
+  width: 15px;
+  left: 58px;
+  top: 1px;
+  }
 /* думаю так должна выглядеть стилизация текста если б он был*/
 
-
 .contacts-phone {
-color: #EE3643;
+color: var( --basic-red);
 font-weight: 700;
 font-size: 21px;
-
 }
 
 .contacts-header{
 line-height: 24px;
 font-size: 14px;
 text-align: center;
-color: #32425C;
-
+color: var( --middle-dark-blue);
 }
+
 .login-link {
-color: #000000;
+color: var(--basic-black);
 font-size: 21px;
 line-height: 21px;
 }
 
 .reg-link {
-  color: #000000;
-  font-size: 21px;
-  line-height: 21px;
+color: var(--basic-black);
+font-size: 21px;
+line-height: 21px;
 }
 
 .content-item {
 font-weight: 700;
 font-size: 24px;
 line-height: 30px;
-color: #FFFFFF;
+color: var(--basic-white);
+list-style: none;
 }
 
 .content-button {
 font-size: 14px;
 line-height: 18px;
-color: #FFFFFF;
+color: var(--basic-white);
 }
 
 .popular-goods{
 font-size: 30px;
 line-height: 30px;
 text-align: left;
-color: #32425C;
-font-weight: 400;
+color: var( --middle-dark-blue);
+font-weight: 400; /* я удаляю его и текст меняется */
 }
 
-.all-popular-goods{
+.popular-list{
+list-style: none;
+}
+
+.red-button{
 font-size: 14px;
 line-height: 18px;
 text-align: center;
-color: #FFFFFF;
+color: var(--basic-white);
+background-color: var( --basic-red);
 }
 
 .popular-item{
@@ -96,9 +124,8 @@ font-size: 18px;
 font-weight: 700;
 line-height: 20px;
 letter-spacing: 0px;
-color: #000000;
+color: var(--basic-black);
 text-decoration: none;
-
 }
 
 .high-price{
@@ -106,7 +133,7 @@ font-family: PT Sans;
 font-size: 17px;
 font-weight: 700;
 line-height: 18px;
-color: #A9A9A9;
+color: var(--dark-grey);
 text-decoration: line-through;
 }
 
@@ -115,8 +142,8 @@ font-family: PT Sans;
 font-size: 17px;
 font-weight: 700;
 line-height: 18px;
-color: #FFFFFF;
-background: #EE3643;
+color: var(--basic-white);
+background-color: var( --basic-red);
 }
 
 .popular-manufacturers{
@@ -124,29 +151,21 @@ font-size: 30px;
 font-weight: 400;
 line-height: 30px;
 text-align: left;
-color: #32425C;
-font-style: normal;
+color: var( --middle-dark-blue);
 font-family: Cuprum;
 }
 
-.all-manufacturers{
-font-size: 14px;
-line-height: 18px;
-text-align: center;
-color: #FFFFFF;
-}
-
 .popular-manufacturer{
-
-border: 15px #FFFFFF;
+list-style: none;
+border: 15px color: var(--basic-white);
 }
-
 
 .services {
 font-size: 30px;
 font-weight: 400;
 line-height: 30px;
 text-align: left;
+color: var(--basic-black);
 }
 
 .text-small{
@@ -155,105 +174,88 @@ font-size: 13px;
 font-weight: 400;
 line-height: 24px;
 text-align: left;
+color: var(--basic-black);
+}
 
-color: black;
+.features-list{
+list-style: none;
+}
+.feature-content-list{
+list-style: none;
 }
 
 .feature-content{
-  font-family: Cuprum;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 30px;
-  letter-spacing: 0px;
-  text-align: left;
+font-family: Cuprum;
+font-size: 30px;
+font-weight: 400;
+line-height: 30px;
+letter-spacing: 0px;
+text-align: left;
+color: var( --middle-dark-blue);
 }
 
 .company-name-contacts{
-  //styleName: Заголовок 2;
-  font-family: Cuprum;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 30px;
-  letter-spacing: 0px;
-  text-align: left;
+font-family: Cuprum;
+font-size: 30px;
+font-weight: 400;
+line-height: 30px;
+letter-spacing: 0px;
+text-align: left;
 }
 
 .expedition{
-  //styleName: Параграф 2;
-  font-family: Cuprum;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0px;
-  text-align: left;
-color: #000000;
-
-
-}
-
-
-
-.red-button{
-//styleName: Текст на кнопке;
-font-family: Cuprum;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 18px;
-letter-spacing: 0px;
-text-align: center;
-color: #FFFFFF;
-background: #EE3643;
-}
-
-
-.nav-item-yellow {
-//styleName: Параграф 2;
 font-family: Cuprum;
 font-size: 18px;
-font-style: normal;
 font-weight: 400;
 line-height: 24px;
 letter-spacing: 0px;
 text-align: left;
-color: #FFD180;
+color: var(--basic-black);
+list-style: none;
+}
+
+.nav-item-light-brown {
+font-family: Cuprum;
+font-size: 18px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0px;
+text-align: left;
+color: var(--light-brown);
+background-color: var(--middle-dark-blue);
 float: left;
+border: 5px solid color: var(--basic-white);
+list-style: none;
 }
 
 .contacts-footer{
-  //styleName: Параграф 2;
-  font-family: Cuprum;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0px;
-  text-align: left;
-  color: #F3F7F9;
+font-family: Cuprum;
+font-size: 18px;
+line-height: 24px;
+letter-spacing: 0px;
+text-align: left;
+color: var(--very-light-blue);
+background-color: var(--middle-dark-blue);
 }
+
 .all-rights{
-//styleName: Параграф 3;
 font-family: Cuprum;
 font-size: 16px;
-font-style: normal;
-font-weight: 400;
 line-height: 18px;
 letter-spacing: 0px;
 text-align: left;
-color: #F3F7F9;
+color: var(--basic-white);
+}
+
+.socials{
+list-style: none;
 }
 
 .inet{
-  //styleName: Параграф 3;
-  font-family: Cuprum;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 18px;
-  letter-spacing: 0px;
-  text-align: left;
-  color: #FFD180;
+font-family: Cuprum;
+font-size: 16px;
+line-height: 18px;
+letter-spacing: 0px;
+text-align: left;
+color: var(--light-brown);
 }
