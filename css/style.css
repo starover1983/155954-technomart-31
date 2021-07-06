@@ -43,13 +43,14 @@
 
 .user-navigation{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   list-style: none;
 
 }
 
 .user-nav-items{
   display: grid;
+
   grid-template-columns: 1fr 1fr 1fr 1fr;
   list-style: none;
   margin: 2px;
@@ -88,11 +89,6 @@
   outline-offset: -5px;
 
 }
-display: grid;
-  grid-template-columns: 1fr 1fr;
-
-
-
 
 a {
   text-decoration: none;
@@ -103,14 +99,13 @@ img {
   height: auto;
 }
 
-
-
 .header-text {
+  display: grid;
+  justify-self: right;
   font-size: 16px;
   font-style: italic;
   line-height: 23px;
   letter-spacing: 0px;
-  text-align: left;
   color: var(--basic-red);
 }
 
@@ -141,6 +136,7 @@ img {
 }
 
 .user-login {
+  display: grid;
   font-size: 21px;
   font-style: normal;
   font-weight: 400;
@@ -179,6 +175,12 @@ img {
   letter-spacing: 0px;
   text-align: left;
   color: var(--middle-dark-blue);
+}
+.nav-link-menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: auto;
+
 }
 
 .nav-link a{
@@ -269,6 +271,15 @@ img {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+.popular-list-catalog {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+
+
+}
+
 .red-button {
   font-size: 14px;
   line-height: 18px;
@@ -337,7 +348,12 @@ img {
   display: grid;
   grid-template-columns: 1fr;
 }
+.nav-numbers {
+list-style: none;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
 
+}
 .perforator-info {
   font-size: 30px;
   font-weight: 400;
@@ -438,6 +454,9 @@ img {
 }
 
 .all-rights {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-self: center; 
   margin: 0;
   width: 227px;
   justify-self: right;
