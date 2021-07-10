@@ -8,6 +8,10 @@
   --very-light-blue: #F3F7F9;
   --basic-green: #63A63E;
   --black-opacity: rgba(0, 0, 0, 0.3);
+  --down-footer:#293449;
+  --socials-circle: #212A3A;
+
+
 }
 .page{
   height: 100%;
@@ -31,7 +35,6 @@
   line-height: 24px;
   font-weight: 400;
   color: var(--basic-white);
-  text-transform: uppercase;
   background-color: var(--basic-black);
   background: url("../img/demo-background.png");
   background-position: top center;
@@ -50,7 +53,7 @@
 
 .user-nav-items{
   display: grid;
-
+  width: max-content;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   list-style: none;
   margin: 2px;
@@ -67,15 +70,16 @@
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
-  padding-left: 130px;
-  padding-right: 130px;
+  padding-left: 24px;
+  padding-right: 24px;
   margin-right: 57px;
+  width: max-content;
 }
 
 .main-header-logo {
 
-  height: 17px;
-  width: 15px;
+  height: 42px;
+  width: 220px;
   left: 58px;
   top: 1px;
   outline: 5px solid rgba(255, 0, 0, 0.3);
@@ -83,12 +87,7 @@
 }
 
 
-.main-footer {
 
-  outline: 5px solid rgba(255, 0, 0, 0.7);
-  outline-offset: -5px;
-
-}
 
 a {
   text-decoration: none;
@@ -109,14 +108,14 @@ img {
   color: var(--basic-red);
 }
 
-.nav-item a {
+.nav-item {
   color: var(--basic-white);
   background-color: var( --middle-dark-blue);
   line-height: 24px;
   font-size: 18px;
   text-decoration: none;
   list-style: none;
-  display: grid;
+  display: flex;
 }
 
 
@@ -180,6 +179,7 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   width: auto;
+  list-style: none;
 
 }
 
@@ -385,19 +385,74 @@ grid-template-columns: 1fr 1fr 1fr 1fr;
   line-height: 30px;
   letter-spacing: 0px;
   text-align: left;
-  color: var( --middle-dark-blue);
+  color: var(--middle-dark-blue);
+}
+
+.about-company {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+
 }
 
 .company-name-contacts {
+  background-color: var(--basic-white);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 75px;
+}
+
+.text-small-about {
+  font-family: PT Sans, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: var(--basic-black);
+  margin: 0 0 1px;
+  margin-left: 131px;
+}
+
+.text-big-about {
   font-family: Cuprum;
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
   letter-spacing: 0px;
   text-align: left;
+  color: var(--basic-black);
+  margin: 0 0 24px;
+  text-transform: uppercase;
+  margin-top: 70px;
+  margin-left: 131px;
+
 }
 
-.expedition {
+.text-big-contacts {
+  font-family: Cuprum;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: var(--basic-black);
+  margin-bottom: 27px;
+  margin-top: 70px;
+  margin-left
+
+}
+
+
+
+.about-expedition {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+
+
+}
+
+.expedition-item a{
   font-family: Cuprum;
   font-size: 18px;
   font-weight: 400;
@@ -405,85 +460,221 @@ grid-template-columns: 1fr 1fr 1fr 1fr;
   letter-spacing: 0px;
   text-align: left;
   color: var(--basic-black);
-  list-style: none;
+  display: flex;
+  align-items: center;
+  display: inline-block;
+  vertical-align: middle;
+  width: 25px;
+  height: 2px;
+  background-color: var(--basic-red);
+  margin-right: 12px;
+  margin-bottom: 12px;
+  margin-left: 131px;
+
 }
-.footer-items{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  list-style: none;
+.red-button-about {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: var(--basic-white);
+  background-color: var( --basic-red);
+  width: 220px;
+  margin-left: 131px;
 }
 
-.nav-brown-items {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  list-style: none;
+.main-footer {
+  background-color: var( --middle-dark-blue);
+    outline: 5px solid rgba(255, 0, 0, 0.7);
+    outline-offset: -5px;
+
 }
 
-.nav-item-light-brown a {
-  font-family: Cuprum;
+.logo-footer {
+  display: flex;
+  margin-left: 132px;
+  margin-bottom: 27px;
+}
+
+.top-footer {
+ /*
+  max-width: 550px;
+  padding-top: 37px;*/
+  подставлял- не подходит и все ломает
+
+}
+.footer-items-white {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap-reverse;
+  margin-right: 131px;
+  margin-bottom: 34px;
+  margin-left: -58px;
+}
+
+.footer-items-brown {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-left: px;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap-reverse;
+  margin-right: 131px;
+  margin-left: -58px;
+
+}
+
+.nav-item-footer a{
+  display: flex;
+  color: var(--basic-white);
+  margin-left: 58px;
+  line-height: 24px;
   font-size: 18px;
-  font-weight: 400;
+  text-decoration: none;
+  list-style: none;
+}
+
+.middle-footer{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--middle-dark-blue);
+}
+
+.nav-item-light-brown a{
+  font-size: 18px;
   line-height: 24px;
   letter-spacing: 0px;
-  text-align: left;
   color: var(--light-brown);
   background-color: var(--middle-dark-blue);
-  float: left;
-  border: 5px solid color: var(--basic-white);
   list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 58px;
+}
+
+nav-item-light-brown{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 525px;
+  padding: 0;
+  margin-right: 58px;
 }
 
 .contacts-footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-self: start;
-  font-family: Cuprum;
+  display: flex;
+  justify-content: space-between;
+  justify-self: left;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 0px;
-  text-align: left;
   color: var(--very-light-blue);
   background-color: var(--middle-dark-blue);
-  outline: 5px solid rgba(0, 255, 255, 0.7);
-  outline-offset: -5px;
+  max-width: 350px;
+  margin-bottom: 60px;
+  margin-left: 132px;
+
 }
 
-.down-footer{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+.down-footer {
+  background-color:#293449;
+  display: flex;
+  height: 107px;
+  align-items: center;
+
 }
 
 .all-rights {
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-self: center; 
-  margin: 0;
-  width: 227px;
+  display: flex;
   justify-self: right;
-  font-family: Cuprum;
+  margin-left: 132px;
   font-style: normal;
   font-size: 16px;
   line-height: 18px;
   letter-spacing: 0px;
   text-align: left;
   color: var(--basic-white);
+  max-width: 300px;
+  margin-top: 36;
+  margin-bottom: 34;
+
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0)
 }
 
 .footer-socials {
-  display: grid;
   list-style: none;
-  justify-self: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0;
+  margin-top: 36;
+  margin-bottom: 34;
+}
+
+.footer-socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  border: 1px solid ;
+  color: var(--socials-circle);
+  background-color: var(--socials-circle);
+  border-radius: 50%;
+  margin-right: 4px;
+  width: 44px;
+  height: 44px;
+  }
+
+. feedback-develop {
+  display: flex;
+  justify-self: right;
+  justify-content: space-between;
+  list-style: none;
+  margin-top: 36;
+  margin-bottom: 34;
+  max-width: 350px;
+  flex-wrap: wrap-reverse;
+}
+
+.nav-item-down-footer {
+  color: var(--basic-white);
+  background-color: var(--down-footer);
+  line-height: 24px;
+  font-size: 18px;
+  text-decoration: none;
   list-style: none;
 }
 
-.inet a {
-  margin: 0;
-  justify-self: end;
-  font-family: Cuprum;
+
+.nav-item-internet {
+  display:flex;
   font-style: normal;
   font-size: 16px;
   line-height: 18px;
   letter-spacing: 0px;
   color: var(--light-brown);
-
+  background-color: #293449;
+  padding-top: 35;
+  padding-bottom: 35;
+  text-decoration: underline;
+  justify-content: space-between;
+  margin-right: 141px;
 }
